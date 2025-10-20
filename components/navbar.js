@@ -101,7 +101,7 @@ class CustomNavbar extends HTMLElement {
       <nav>
         <a href="#" class="logo">
           <i data-feather="car"></i>
-          GMA Detailing
+          VSE Detailing
         </a>
         
         <button class="mobile-menu-btn" aria-label="Toggle menu">

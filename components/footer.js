@@ -91,7 +91,7 @@ class CustomFooter extends HTMLElement {
             <a href="#" aria-label="WhatsApp"><i data-feather="phone"></i></a>
           </div>
           
-          <p class="copyright">&copy; ${new Date().getFullYear()} GMA Detailing. Все права защищены.</p>
+          <p class="copyright">&copy; ${new Date().getFullYear()} VSE Detailing. Все права защищены.</p>
         </div>
       </footer>
       
