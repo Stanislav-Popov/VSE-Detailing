@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta
             name="description"
             content="Профессиональный детейлинг автомобилей с 2017 года. Реальные результаты работ." />
@@ -12,294 +12,294 @@
         <meta property="og:title" content="VSE Detailing - Детейлинг в Георгиевске" />
         <meta property="og:description" content="Профессиональный детейлинг с реальными фото работ." />
         <title>VSE Detailing</title>
+
         <link rel="stylesheet" href="style.css" />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-        <script src="components/navbar.js"></script>
-        <script src="components/footer.js"></script>
+        <!-- Feather icons -->
+        <script defer src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     </head>
     <body class="bg-gray-50 font-sans">
-        <custom-navbar></custom-navbar>
+        <!-- NAVBAR -->
+        <header class="navbar" role="banner">
+            <div class="container header-inner">
+                <a class="logo" href="#">
+                    <span>VSE Detailing</span>
+                </a>
 
-        <header class="bg-white shadow-sm sticky top-0 z-50">
-            <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
-                <div class="flex items-center mb-4 md:mb-0">
-                    <h1 class="text-2xl md:text-3xl font-bold text-blue-600">VSE Detailing</h1>
-                </div>
-                <p class="text-gray-600 italic text-center md:text-right">
-                    "Мы показываем результаты работ, а не картинки с машинками из интернета"
+                <button class="mobile-menu-btn" aria-label="Открыть меню" aria-expanded="false">
+                    <i data-feather="menu" aria-hidden="true"></i>
+                </button>
+
+                <nav class="nav-links" role="navigation" aria-label="Главная навигация">
+                    <a href="#about">О нас</a>
+                    <a href="#before-after">Результаты</a>
+                    <a href="#gallery">Галерея</a>
+                    <a href="#contact">Контакты</a>
+                    <a class="btn-primary" href="tel:+7(903)468-74-60">Записаться</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- О компании (header-big) -->
+        <header class="hero">
+            <div class="container hero-inner">
+                <h1 class="site-title">VSE Detailing</h1>
+                <p class="site-tagline">
+                    Мы показываем результаты работ, а не картинки с машинками из интернета
                 </p>
             </div>
         </header>
 
         <main>
-            <!-- About Section -->
-            <section id="about" class="py-16 bg-gray-100">
-                <div class="container mx-auto px-4">
-                    <h2 class="text-3xl font-bold text-center mb-8">Детейлинг В Георгиевске</h2>
-
-                    <div class="mb-12">
-                        <h3 class="text-xl font-semibold mb-4 text-center">О нас за 60 секунд</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                                <i data-feather="calendar" class="w-8 h-8 mx-auto text-blue-500 mb-2"></i>
-                                <p class="text-lg font-bold">с 2017 года</p>
-                                <p class="text-gray-600 mt-2">Наша компания основана в 2017 году</p>
-                            </div>
-                            <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                                <i data-feather="star" class="w-8 h-8 mx-auto text-yellow-500 mb-2"></i>
-                                <p class="text-lg font-bold">Рейтинг 5,0</p>
-                                <p class="text-gray-600 mt-2">Лучшее место по версии Яндекс, Google, 2gis</p>
-                            </div>
-                            <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                                <i data-feather="users" class="w-8 h-8 mx-auto text-green-500 mb-2"></i>
-                                <p class="text-lg font-bold">>1000</p>
-                                <p class="text-gray-600 mt-2">Более 1000 довольных клиентов</p>
-                            </div>
-                            <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                                <i data-feather="file-text" class="w-8 h-8 mx-auto text-purple-500 mb-2"></i>
-                                <p class="text-lg font-bold">Работаем "в белую"</p>
-                                <p class="text-gray-600 mt-2">Официальные документы для всех клиентов</p>
-                            </div>
+            <!-- About -->
+            <section id="about" class="section about">
+                <div class="container">
+                    <h2 class="section-title">Детейлинг В Георгиевске</h2>
+                    <div class="grid stats-grid">
+                        <div class="card">
+                            <i data-feather="award" class="icon-lg" aria-hidden="true"></i>
+                            <p class="card-title">Эксперты</p>
+                            <p class="card-text">Работаем только с проверенными премиальными материалами</p>
                         </div>
-                    </div>
 
-                    <div class="text-center">
-                        <h3 class="text-xl font-semibold mb-4">Отзывы на Яндекс, Google и 2GIS</h3>
-                        <p class="text-gray-700 mb-4">Суммарно отзывов: >400</p>
-                        <a
-                            href="#"
-                            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full transition duration-300">
-                            Посмотреть отзывы
-                        </a>
+                        <div class="card">
+                            <i data-feather="shield" class="icon-lg" aria-hidden="true"></i>
+                            <p class="card-title">Точно в срок</p>
+                            <p class="card-text">Строго соблюдаем оговоренные сроки выполнения работ</p>
+                        </div>
+
+                        <div class="card">
+                            <i data-feather="check-circle" class="icon-lg" aria-hidden="true"></i>
+                            <p class="card-title">Качественно</p>
+                            <p class="card-text">
+                                Строгий контроль на каждом этапе. Принимаете только когда все идеально
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <i data-feather="heart" class="icon-lg" aria-hidden="true"></i>
+                            <p class="card-title">С душой к деталям</p>
+                            <p class="card-text">Относимся к каждой машине как к своей собственной</p>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Before/After Section -->
-            <section id="before-after" class="py-16 bg-white">
-                <div class="container mx-auto px-4">
-                    <h2 class="text-3xl font-bold text-center mb-12">Примеры наших работ</h2>
+            <!-- Before / After -->
+            <section id="before-after" class="section before-after-section">
+                <div class="container">
+                    <h2 class="section-title text-center">Примеры наших работ</h2>
 
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="grid three-cols gap-8 mt-8">
                         <!-- Slider 1 -->
-                        <div class="before-after-slider relative overflow-hidden rounded-lg shadow-lg">
+                        <div
+                            class="before-after-slider"
+                            data-initial="50"
+                            tabindex="0"
+                            aria-label="Полировка экрана часов: слайдер до и после">
                             <img
-                                src="http://static.photos/automotive/640x360/1"
-                                alt="До обработки автомобиля"
-                                class="absolute top-0 left-0 w-full h-full object-cover"
+                                class="ba-image ba-before"
+                                src="public/ba-images/1-before.jpg"
+                                alt="До обработки экрана часов"
                                 loading="lazy" />
-                            <div class="before-after-overlay relative overflow-hidden" style="width: 50%">
-                                <img
-                                    src="http://static.photos/automotive/640x360/2"
-                                    alt="После обработки автомобиля"
-                                    class="absolute top-0 left-0 w-full h-full object-cover"
-                                    loading="lazy" />
-                            </div>
-                            <div
-                                class="slider-handle absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize"
-                                style="left: 50%"></div>
-                            <div
-                                class="slider-arrow absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow">
-                                <i data-feather="move" class="w-4 h-4 text-gray-800"></i>
-                            </div>
-                            <p class="mt-2 text-center text-gray-700">Полировка кузова</p>
+                            <img
+                                class="ba-image ba-after"
+                                src="public/ba-images/1-after.jpg"
+                                alt="После обработки экрана часов"
+                                loading="lazy" />
+                            <div class="ba-overlay" style="width: 50%"></div>
+
+                            <button
+                                class="ba-handle"
+                                aria-label="Перетащите, чтобы показать результат"></button>
                         </div>
 
                         <!-- Slider 2 -->
-                        <div class="before-after-slider relative overflow-hidden rounded-lg shadow-lg">
+                        <div
+                            class="before-after-slider"
+                            data-initial="50"
+                            tabindex="0"
+                            aria-label="Полировка стекла: слайдер до и после">
                             <img
-                                src="http://static.photos/automotive/640x360/3"
-                                alt="До обработки салона"
-                                class="absolute top-0 left-0 w-full h-full object-cover"
+                                class="ba-image ba-before"
+                                src="public/ba-images/2-before.jpg"
+                                alt="До полировки стекла"
                                 loading="lazy" />
-                            <div class="before-after-overlay relative overflow-hidden" style="width: 50%">
-                                <img
-                                    src="http://static.photos/automotive/640x360/4"
-                                    alt="После обработки салона"
-                                    class="absolute top-0 left-0 w-full h-full object-cover"
-                                    loading="lazy" />
-                            </div>
-                            <div
-                                class="slider-handle absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize"
-                                style="left: 50%"></div>
-                            <div
-                                class="slider-arrow absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow">
-                                <i data-feather="move" class="w-4 h-4 text-gray-800"></i>
-                            </div>
-                            <p class="mt-2 text-center text-gray-700">Чистка салона</p>
+                            <img
+                                class="ba-image ba-after"
+                                src="public/ba-images/2-after.jpg"
+                                alt="После полировки стекла"
+                                loading="lazy" />
+                            <div class="ba-overlay" style="width: 50%"></div>
+
+                            <button
+                                class="ba-handle"
+                                aria-label="Перетащите, чтобы показать результат"></button>
                         </div>
 
                         <!-- Slider 3 -->
-                        <div class="before-after-slider relative overflow-hidden rounded-lg shadow-lg">
+                        <div
+                            class="before-after-slider"
+                            data-initial="50"
+                            tabindex="0"
+                            aria-label="Полировка лобового: слайдер до и после">
                             <img
-                                src="http://static.photos/automotive/640x360/5"
-                                alt="До обработки фар"
-                                class="absolute top-0 left-0 w-full h-full object-cover"
+                                class="ba-image ba-before"
+                                src="public/ba-images/3-before.jpg"
+                                alt="До полировки стекла"
                                 loading="lazy" />
-                            <div class="before-after-overlay relative overflow-hidden" style="width: 50%">
-                                <img
-                                    src="http://static.photos/automotive/640x360/6"
-                                    alt="После обработки фар"
-                                    class="absolute top-0 left-0 w-full h-full object-cover"
-                                    loading="lazy" />
-                            </div>
-                            <div
-                                class="slider-handle absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize"
-                                style="left: 50%"></div>
-                            <div
-                                class="slider-arrow absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow">
-                                <i data-feather="move" class="w-4 h-4 text-gray-800"></i>
-                            </div>
-                            <p class="mt-2 text-center text-gray-700">Реставрация фар</p>
+                            <img
+                                class="ba-image ba-after"
+                                src="public/ba-images/3-after.jpg"
+                                alt="До полировки стекла"
+                                loading="lazy" />
+                            <div class="ba-overlay" style="width: 50%"></div>
+
+                            <button
+                                class="ba-handle"
+                                aria-label="Перетащите, чтобы показать результат"></button>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Gallery Section -->
-            <section id="gallery" class="py-16 bg-gray-100">
-                <div class="container mx-auto px-4">
-                    <h2 class="text-3xl font-bold text-center mb-8">Наши работы</h2>
-                    <p class="text-center text-gray-700 max-w-2xl mx-auto mb-12">
-                        В данной галерее собрана лишь малая часть работ нашего детейлинг центра. И ваш
-                        автомобиль окажется в топ галерее нашего сайта.
+            <!-- Gallery -->
+            <section id="gallery" class="section gallery-section bg-light">
+                <div class="container">
+                    <h2 class="section-title text-center">Наши работы</h2>
+                    <p class="center muted mb-6">
+                        В данной галерее собрана лишь малая часть работ нашего детейлинг центра.
                     </p>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div
-                            class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="grid three-cols gap-6 gallery-grid" id="gallery-grid">
+                        <div class="gallery-item">
                             <img
-                                src="http://static.photos/automotive/640x360/7"
-                                alt="Детейлинг автомобиля 1"
-                                class="w-full h-48 object-cover hover:scale-105 transition duration-500"
+                                src="public/gallery-images/gallery-1.jpg"
+                                alt="Полировка лобового"
                                 loading="lazy" />
                         </div>
-                        <div
-                            class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="gallery-item">
                             <img
-                                src="http://static.photos/automotive/640x360/8"
-                                alt="Детейлинг автомобиля 2"
-                                class="w-full h-48 object-cover hover:scale-105 transition duration-500"
+                                src="public/gallery-images/gallery-2.jpg"
+                                alt="Полировка автомобиля"
                                 loading="lazy" />
                         </div>
-                        <div
-                            class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="gallery-item">
                             <img
-                                src="http://static.photos/automotive/640x360/9"
-                                alt="Детейлинг автомобиля 3"
-                                class="w-full h-48 object-cover hover:scale-105 transition duration-500"
+                                src="public/gallery-images/gallery-3.jpg"
+                                alt="Полировка фар"
                                 loading="lazy" />
                         </div>
-                        <div
-                            class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="gallery-item">
                             <img
-                                src="http://static.photos/automotive/640x360/10"
-                                alt="Детейлинг автомобиля 4"
-                                class="w-full h-48 object-cover hover:scale-105 transition duration-500"
+                                src="public/gallery-images/gallery-4.jpg"
+                                alt="Полировка стёкол"
                                 loading="lazy" />
                         </div>
-                        <div
-                            class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                            <img
-                                src="http://static.photos/automotive/640x360/11"
-                                alt="Детейлинг автомобиля 5"
-                                class="w-full h-48 object-cover hover:scale-105 transition duration-500"
-                                loading="lazy" />
-                        </div>
-                        <div
-                            class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                            <img
-                                src="http://static.photos/automotive/640x360/12"
-                                alt="Детейлинг автомобиля 6"
-                                class="w-full h-48 object-cover hover:scale-105 transition duration-500"
-                                loading="lazy" />
-                        </div>
-                    </div>
-
-                    <div class="text-center mt-12">
-                        <a
-                            href="#"
-                            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-full transition duration-300">
-                            УСЛУГИ И ЦЕНЫ
-                        </a>
                     </div>
                 </div>
             </section>
 
-            <!-- Contact & Map Section -->
-            <section id="contact" class="py-16 bg-gray-800 text-white">
-                <div class="container mx-auto px-4">
-                    <div class="flex flex-col lg:flex-row gap-12">
-                        <div class="lg:w-1/2">
-                            <h2 class="text-3xl font-bold mb-6">Контакты</h2>
+            <!-- Contact & Map -->
+            <section id="contact" class="section contact-section bg-dark text-white">
+                <div class="container contact-grid">
+                    <div class="contact-card">
+                        <h2 class="section-title">Контакты</h2>
 
-                            <div class="space-y-4">
-                                <div class="flex items-start">
-                                    <i data-feather="phone" class="w-5 h-5 mt-1 mr-3"></i>
-                                    <div>
-                                        <p class="font-medium">Телефон:</p>
-                                        <a href="tel:+7(XXX)XXX-XX-XX" class="hover:text-blue-300 transition"
-                                            >+7 (XXX) XXX-XX-XX</a
-                                        >
-                                    </div>
-                                </div>
-
-                                <div class="flex items-start">
-                                    <i data-feather="mail" class="w-5 h-5 mt-1 mr-3"></i>
-                                    <div>
-                                        <p class="font-medium">Электронная почта:</p>
-                                        <a
-                                            href="mailto:vseds@yandex.ru"
-                                            class="hover:text-blue-300 transition"
-                                            >vseds@yandex.ru</a
-                                        >
-                                    </div>
-                                </div>
-
-                                <div class="flex items-start">
-                                    <i data-feather="map-pin" class="w-5 h-5 mt-1 mr-3"></i>
-                                    <div>
-                                        <p class="font-medium">Адрес:</p>
-                                        <p>Ростов-на-Дону, ул. Плиева, 61</p>
-                                    </div>
+                        <div class="contact-lines">
+                            <div class="contact-line">
+                                <i data-feather="phone" class="icon-sm" aria-hidden="true"></i>
+                                <div>
+                                    <p class="bold">Телефон:</p>
+                                    <a href="tel:+7(903)468-74-60" class="link">+7 (903) 468-74-60</a>
                                 </div>
                             </div>
 
-                            <div class="mt-8">
-                                <h3 class="text-xl font-semibold mb-4">График работы</h3>
-                                <div class="space-y-2">
-                                    <p>Пн-Пт: 09:00 - 19:00</p>
-                                    <p>Сб: 10:00 - 17:00</p>
-                                    <p>Вс: выходной</p>
+                            <div class="contact-line">
+                                <i data-feather="mail" class="icon-sm" aria-hidden="true"></i>
+                                <div>
+                                    <p class="bold">Электронная почта:</p>
+                                    <a href="mailto:seryjvojtov29370@gmail.com" class="link"
+                                        >seryjvojtov29370@gmail.com</a
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="contact-line">
+                                <i data-feather="map-pin" class="icon-sm" aria-hidden="true"></i>
+                                <div>
+                                    <p class="bold">Адрес:</p>
+                                    <p>Георгиевск, переулок Минераловодский, 10/3</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="lg:w-1/2">
-                            <div class="h-full bg-gray-700 rounded-lg overflow-hidden">
-                                <iframe
-                                    src="https://yandex.ru/map-widget/v1/?z=15&ol=biz&oid=1234567890&ll=39.718753%2C47.222531&mode=search&text=%D0%A0%D0%BE%D1%81%D1%82%D0%BE%D0%B2-%D0%BD%D0%B0-%D0%94%D0%BE%D0%BD%D1%83%2C%20%D1%83%D0%BB.%20%D0%9F%D0%BB%D0%B8%D0%B5%D0%B2%D0%B0%2C%2061"
-                                    width="100%"
-                                    height="400"
-                                    frameborder="0"
-                                    allowfullscreen="true"
-                                    style="position: relative"
-                                    loading="lazy"
-                                    aria-label="Карта расположения VSE Detailing в Ростове-на-Дону">
-                                </iframe>
-                            </div>
+                        <div class="mt-6">
+                            <h3 class="small-title">График работы:</h3>
+                            <p>Уточняйте по телефону</p>
                         </div>
+                    </div>
+
+                    <div class="map-card">
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A8d0bb87010814f848d009c3065b3fa0c93aec45db592ecf92db8ef61fc274247&amp;source=constructor"
+                            width="100%"
+                            height="400"
+                            frameborder="0"
+                            allowfullscreen
+                            loading="lazy"
+                            aria-label="Карта расположения VSE Detailing">
+                        </iframe>
                     </div>
                 </div>
             </section>
         </main>
 
-        <custom-footer></custom-footer>
+        <!-- FOOTER -->
+        <footer class="footer" role="contentinfo">
+            <div class="container footer-inner">
+                <div class="footer-links">
+                    <a href="#about">О компании</a>
+                    <a href="#before-after">Результаты</a>
+                    <a href="#before-after">Наши работы</a>
+                    <a href="#contact">Контакты</a>
+                </div>
 
-        <script src="script.js"></script>
-        <script>
-            feather.replace()
-        </script>
+                <div class="social-links">
+                    <div class="social-links">
+                        <!-- Instagram -->
+                        <a
+                            href="https://instagram.com/vse0303"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="Instagram">
+                            <i data-feather="instagram" aria-hidden="true"></i>
+                        </a>
+
+                        <!-- WhatsApp -->
+                        <a
+                            href="https://wa.me/79034687460"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="WhatsApp">
+                            <i data-feather="message-circle" aria-hidden="true"></i>
+                        </a>
+
+                        <!-- Telegram -->
+                        <a href="https://t.me/kamo228" target="_blank" rel="noopener" aria-label="Telegram">
+                            <i data-feather="send" aria-hidden="true"></i>
+                        </a>
+
+                        <!-- Звонок -->
+                        <a href="tel:+79034687460" aria-label="Позвонить">
+                            <i data-feather="phone-call" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="copyright">&copy; <span id="year"></span> VSE Detailing. Все права защищены.</p>
+            </div>
+        </footer>
+
+        <script src="script.js" defer></script>
     </body>
 </html>
